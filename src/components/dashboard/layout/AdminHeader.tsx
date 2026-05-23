@@ -80,15 +80,15 @@ export function AdminHeader() {
           <div className="hidden lg:block lg:h-6 lg:w-px lg:bg-border/50" aria-hidden="true" />
 
           <DropdownMenu>
-            <DropdownMenuTrigger asChild>
+            <DropdownMenuTrigger render={
               <Button variant="ghost" className="relative h-9 w-9 rounded-full ring-2 ring-transparent hover:ring-primary/20 transition-all">
                 <Avatar className="h-9 w-9">
                   <AvatarImage src="https://github.com/shadcn.png" alt="Admin" />
                   <AvatarFallback className="bg-primary text-primary-foreground font-semibold">AD</AvatarFallback>
                 </Avatar>
               </Button>
-            </DropdownMenuTrigger>
-            <DropdownMenuContent className="w-56" align="end" forceMount>
+            } />
+            <DropdownMenuContent className="w-56" align="end">
               <DropdownMenuLabel className="font-normal">
                 <div className="flex flex-col space-y-1">
                   <p className="text-sm font-medium leading-none">Super Admin</p>
